@@ -1,0 +1,14 @@
+@import './libs--normalize.css';  /* Загальні налаштування простих тегів */
+
+@import './0--main.css';        /* Загальні налаштування простих тегів */
+@import './1--helpers.css';     /* Стилі помічники оформлення загальної поведінки */
+@import './2--utils.css';       /* Різні елементи блоків */
+@import './2--btn.css';         /* Кнопки проекту */
+
+@import './block/quizz.css';
+@import './block/graph.css';
+@import './block/main-block.css';
+@import './block/success-block.css';
+@import './block/partners.css';
+@import './block/footer.css';
+@import './block/modal.css';

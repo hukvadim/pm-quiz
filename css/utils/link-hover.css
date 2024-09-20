@@ -1,0 +1,19 @@
+.link-hover {
+    --line-bottom: 0;
+    position: relative;
+}
+
+.link-hover::before {
+    content: '';
+    position: absolute;
+    bottom: var(--line-bottom);
+    left: 0;
+    height: 0;
+    width: 100%;
+    border-bottom: 1px solid;
+    transition: width .25s;
+}
+
+.link-hover:hover::before {
+    width: 0;
+}

@@ -1,0 +1,92 @@
+.hidden {
+    display: none !important;
+}
+
+.font-2 {
+	font-family: var(--font-family-2);
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.fw-bold {
+	font-weight: bold !important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.flex-items-center {
+	align-items: center;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.gap-12 {
+	gap: 12px;
+}
+
+.gap-20 {
+	gap: 20px;
+}
+
+.gap-24 {
+	gap: 24px;
+}
+
+.container {
+	max-width: calc(1700px + (var(--container-padding) * 2));
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+	position: relative;
+}
+
+.container-md {
+	max-width: calc(1380px + (var(--container-padding) * 2));
+}
+
+.container-sm {
+    max-width: calc(1100px + (var(--container-padding) * 2));
+}
+.container-modal {
+    max-width: calc(834px + (var(--container-padding) * 2));
+}
+
+@media (max-width: 1024px) {
+	.container {
+		--container-padding: var(--container-padding-mobile)
+	}
+}
+
+.bg-gradient {
+	background-color:hsla(0,0%,100%,1);
+	background-image:
+	radial-gradient(at 25% 74%, hsla(1,49%,81%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 58%, hsla(41,70%,90%,1) 0px, transparent 50%),
+	radial-gradient(at 24% 7%, hsla(47,93%,93%,1) 0px, transparent 50%),
+	radial-gradient(at 40% 53%, hsla(23,75%,87%,1) 0px, transparent 50%),
+	radial-gradient(at 52% 70%, hsla(24,75%,87%,1) 0px, transparent 50%),
+	radial-gradient(at 58% 38%, hsla(314,70%,71%,1) 0px, transparent 50%),
+	radial-gradient(at 55% 2%, hsla(290,55%,90%,1) 0px, transparent 50%),
+	radial-gradient(at 99% 0%, hsla(226,73%,90%,1) 0px, transparent 50%),
+	radial-gradient(at 62% 21%, hsla(313,70%,71%,1) 0px, transparent 50%),
+	radial-gradient(at 98% 98%, hsla(264,72%,82%,1) 0px, transparent 50%),
+	radial-gradient(at 0% 100%, hsla(7,69%,86%,1) 0px, transparent 50%);
+}

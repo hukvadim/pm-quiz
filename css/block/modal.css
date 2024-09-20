@@ -1,0 +1,92 @@
+.modal {
+	position: fixed;
+	overflow-y: auto;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	z-index: 2;
+	height: 100%;
+	padding: 1rem 0;
+	display: none;
+}
+.modal.show {
+	display: flex;
+}
+.modal .container {
+	min-height: min-content;
+	margin: 1rem 0;
+}
+.modal .modal__progress {
+	margin: -1.25rem 0 2.125rem;
+}
+.modal .modal__box {
+	border-radius: 2em;
+	padding: 2.5em 3.25em;
+	box-shadow: 0 0.25em 1.25em 0 rgba(0, 0, 0, 0.1);
+	background: var(--color-white);
+}
+.modal .modal__title {
+	font-size: 2.375rem;
+	line-height: 120%;
+	font-weight: normal;
+	text-align: center;
+	color: var(--color-black2);
+	margin-bottom: 1em;
+}
+.modal .modal__content {
+
+}
+
+@media (max-width: 768px) {
+	.modal {
+		padding-top: 1em;
+		align-items: flex-start;
+	}
+	.modal .modal__title {
+		font-size: 1.75em;
+	}
+}
+
+@media (max-width: 480px) {
+	.modal .modal__box {
+		padding: 1rem 1.5rem;
+	}
+}
+
+
+
+
+/* Modal great */
+.modal-great .modal__content {
+	font-size: 1.25em;
+	max-width: 630px;
+	margin: 0 auto;
+}
+.modal-great .modal__content .modal__title {
+	margin-bottom: 1.875rem;
+}
+.modal-great .modal__content p {
+	margin-bottom: 0.75rem;
+	line-height: 120%;
+}
+.modal-great .modal__content p:last-child {
+	margin-bottom: 0;
+}
+.modal-great .modal-footer {
+	margin-top: 2.5rem;
+}
+.modal-great .modal-footer .btn {
+	font-size: 1.125rem;
+}
+
+
+/* Modal quizz */
+.modal-quiz {}
+.modal-quiz .modal__box {
+	padding-bottom: 1.5rem;
+}
+.modal-quiz .modal__progress {
+	margin-top: -0.625rem;
+}

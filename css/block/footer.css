@@ -1,0 +1,29 @@
+footer {
+	font-size: 0.875em;
+	padding: 40px 0 25px;
+}
+footer .footer__copyright-holder {
+}
+footer .footer__copyright {
+	color: rgba(var(--color-black-rgb), 0.8);
+}
+footer .footer__links {
+}
+footer .footer__li {
+}
+footer .footer__link {
+	color: rgba(var(--color-black-rgb), 0.8);
+}
+footer .footer__link:hover {
+	text-decoration: none;
+}
+footer .footer__info {
+	margin-top: 5em;
+	color: rgba(var(--color-black-rgb), 0.5);
+}
+
+@media (max-width: 768px) {
+	footer .footer__info {
+		margin-top: 1.75em;
+	}
+}

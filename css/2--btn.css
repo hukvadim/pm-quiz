@@ -1,0 +1,16 @@
+.btn {
+	font-weight: 500;
+	font-size: 1.75em;
+	line-height: 120%;
+	color: var(--color-white);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1.5rem;
+	padding: 0 1.25em;
+	min-height: 5rem;
+	background-image: linear-gradient(90deg, #e9639f 0%, #8143e2 100%);
+}
+.btn:hover {
+
+}

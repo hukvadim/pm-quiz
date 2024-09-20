@@ -1,0 +1,96 @@
+.checked-box {
+    --dot-offset: 28.5px;
+    --dot-size: 23px;
+    --dot-bg: var(--color-white);
+    --dot-bd: 1px solid var(--color-black2);
+    --active-dot-bg: var(--color-white);
+    --active-bg: var(--color-pink);
+	transition: .3s;
+	position: relative;
+	cursor: pointer;
+	margin: 0;
+	width: 100%;
+}
+.checked-box input {
+    position: absolute;
+    opacity: 0;
+}
+.checked-box .checked-box-wrap,
+.checked-box .checked-box-wrap::before,
+.checked-box .checked-box-wrap::after {
+	transition: .3s;
+}
+.checked-box .checked-box-wrap {
+    box-shadow: 0 0 0 4px var(--color-white);
+    background-color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-radius: 0.75em;
+	min-width: calc(var(--dot-size) + var(--dot-offset) * 2);
+	min-height: 5em;
+	box-shadow: 0 0 0 0 rgb(63 81 181 / 25%);
+	padding: 0 3.25em 0 5em;
+}
+.checked-box .checked-box-wrap::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+    left: 1.5625em;
+    width: var(--dot-size);
+    height: var(--dot-size);
+    background-color: var(--dot-bg);
+	border-radius: 50%;
+}
+.checked-box .checked-box-wrap::before {
+    z-index: 2;
+	background-color: rgb(249 249 249 / 65%);
+    box-shadow: 0 0 0 0 rgb(63 81 181 / 25%);
+	border: var(--dot-bd);
+}
+.checked-box .checked-box__text {
+	font-size: 1.25em;
+}
+.checked-box input:checked + .checked-box-wrap {
+    box-shadow: 0 0 0 0 rgba(var(--color-pink-rgb), .25);
+	background-color: var(--active-bg);
+	color: var(--color-white);
+}
+.checked-box input:checked + .checked-box-wrap::before,
+.checked-box input:checked + .checked-box-wrap::after {
+    opacity: 1;
+}
+.checked-box input:checked + .checked-box-wrap::before {
+    background-color: var(--active-dot-bg);
+}
+.checked-box:hover .checked-box-wrap {
+	box-shadow: 0 0 0 5px rgb(var(--color-pink-rgb), .25);
+	background-color: rgb(var(--color-pink-rgb), .55);
+	color: var(--color-white);
+}
+.checked-box input:checked + .checked-box-wrap,
+.checked-box:hover .checked-box-wrap,
+.checked-box input:checked + .checked-box-wrap::before,
+.checked-box:hover .checked-box-wrap::before {
+    border-color: transparent;
+}
+
+.checked-box .checked-box-wrap.checked-box-wrap-md {
+	min-height: 4.5em;
+}
+
+.checked-box-quizz .checked-box-wrap {
+	border: 1px solid #a6a6a6;
+	min-height: 4.5rem;
+}
+
+@media (max-width: 1185px) {
+	.checked-box {
+		--dot-size: 18px;
+	}
+	.checked-box .checked-box-wrap {
+		min-height: 4em;
+	}
+}

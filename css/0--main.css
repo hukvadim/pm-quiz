@@ -1,0 +1,49 @@
+:root {
+	--font-family: "Jost", sans-serif;
+	--font-family-2: "Encode Sans Condensed", sans-serif;;
+
+	--color-pink: #E9639F;
+	--color-black: #000;
+	--color-black2: #1e1e1e;
+	--color-white: #fff;
+	--color-pink-rgb: 233, 99, 159;
+	--color-black-rgb: 30, 30, 30;
+	--color-white-rgb: 255, 255, 255;
+
+	--container-padding: 100px;
+	--container-padding-mobile: 16px;
+}
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: #fff;
+    color: var(--color-bl);
+}
+
+body.modal-show {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+svg {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    pointer-events: none;
+}
